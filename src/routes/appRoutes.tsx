@@ -170,7 +170,7 @@ const appRoutes: RouteType[] = [
         element: <Page_4_1 />,
         state: "db_11.alert",
         sidebarProps: {
-          displayText: "Л И Ц О"
+          displayText: "ЭКСПЕРТИЗА ВЕБ-САЙТОВ ДОМЕННОЙ ЗОНЫ 'uz' "
         }
       },
       {
