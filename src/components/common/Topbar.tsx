@@ -1,4 +1,5 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
+import { textAlign } from "@mui/system";
 import colorConfigs from "../../configs/colorConfigs";
 import sizeConfigs from "../../configs/sizeConfigs";
 
@@ -11,12 +12,12 @@ const Topbar = () => {
         ml: sizeConfigs.sidebar.width,
         boxShadow: "unset",
         backgroundColor: colorConfigs.topbar.bg,
-        color: colorConfigs.topbar.color
+        color: colorConfigs.topbar.color,
       }}
     >
       <Toolbar>
         <Typography variant="h6">
-          React sidebar with dropdown
+          НАИМЕНОВАНИЕ БАЗ ДАННЫХ И ОПИСАНИЕ ПОЛЕЙ ВВОДА ДАННЫХ 
         </Typography>
       </Toolbar>
     </AppBar>

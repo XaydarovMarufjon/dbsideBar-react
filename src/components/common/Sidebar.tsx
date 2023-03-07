@@ -18,20 +18,12 @@ const Sidebar = () => {
           boxSizing: "border-box",
           borderRight: "0px",
           backgroundColor: colorConfigs.sidebar.bg,
-          color: colorConfigs.sidebar.color
+          color: colorConfigs.sidebar.color,
         }
       }}
     >
       <List disablePadding>
-        <Toolbar sx={{ marginBottom: "20px" }}>
-          <Stack
-            sx={{ width: "100%" }}
-            direction="row"
-            justifyContent="center"
-          >
-            <Avatar src={assets.images.logo} />
-          </Stack>
-        </Toolbar>
+       
         {appRoutes.map((route, index) => (
           route.sidebarProps ? (
             route.child ? (

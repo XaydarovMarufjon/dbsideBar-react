@@ -1,43 +1,46 @@
-import DashboardPageLayout from "../pages/dashboard/DashboardPageLayout";
+import DashboardPageLayout from "../pages/db_1-5/DashboardPageLayout";
 import HomePage from "../pages/home/HomePage";
 import { RouteType } from "./config";
-import DefaultPage from "../pages/dashboard/DefaultPage";
-import DashboardIndex from "../pages/dashboard/DashboardIndex";
+import DashboardIndex from "../pages/db_1-5/DashboardIndex";
 import ChangelogPage from "../pages/changelog/ChangelogPage";
-import AnalyticsPage from "../pages/dashboard/AnalyticsPage";
-import SaasPage from "../pages/dashboard/SaasPage";
-import ComponentPageLayout from "../pages/component/ComponentPageLayout";
+import ComponentPageLayout from "../pages/db_6-7/ComponentPageLayout";
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 import AppsOutlinedIcon from '@mui/icons-material/AppsOutlined';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined';
-import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
-import AlertPage from "../pages/component/AlertPage";
-import ButtonPage from "../pages/component/ButtonPage";
-import InstallationPage from "../pages/installation/InstallationPage";
-import DocumentationPage from "../pages/documentation/DocumentationPage";
+import Page_2_1 from "../pages/db_6-7/Page_2_1";
+import Page_2_2 from "../pages/db_6-7/Page_2_2";
+import Page_4_1 from "../pages/db_11/Page_4_1";
+import Page_1_1 from "../pages/db_1-5/Page_1_1";
+import Page_1_2 from "../pages/db_1-5/Page_1_2";
+import Page_1_3 from "../pages/db_1-5/Page_1_3";
+import Page_1_4 from './../pages/db_1-5/Page_1_4';
+import Page_1_5 from './../pages/db_1-5/Page_1_5';
+import Outlet3 from "../pages/db_8-10/Outlet3";
+import Page_3_2 from "../pages/db_8-10/Page_3_2";
+import Page_3_1 from "../pages/db_8-10/Page_3_1";
+import Page_3_3 from "../pages/db_8-10/Page_3_3";
+import Page_4_2 from "../pages/db_11/Page_4_2";
+import Page_4_3 from "../pages/db_11/Page_4_3";
+import Page_4_4 from "../pages/db_11/PAge_4_4";
 
 const appRoutes: RouteType[] = [
   {
+    path: "/",
     index: true,
     element: <HomePage />,
-    state: "home"
-  },
-  {
-    path: "/installation",
-    element: <InstallationPage />,
-    state: "installation",
+    state: "home",
     sidebarProps: {
-      displayText: "Installation",
-      icon: <FileDownloadOutlinedIcon />
+      displayText: "Bce",
+      icon: <AppsOutlinedIcon />
     }
   },
   {
-    path: "/dashboard",
+    path: "/db_1-5",
     element: <DashboardPageLayout />,
-    state: "dashboard",
+    state: "data  base 1 -5 ",
     sidebarProps: {
-      displayText: "Dashboard",
+      displayText: "DB 1-5",
       icon: <DashboardOutlinedIcon />
     },
     child: [
@@ -47,66 +50,155 @@ const appRoutes: RouteType[] = [
         state: "dashboard.index"
       },
       {
-        path: "/dashboard/default",
-        element: <DefaultPage />,
-        state: "dashboard.default",
+        path: "/db_1-5/page_1_1",
+        element: <Page_1_1 />,
+        state: "db_1-5.page 1-1",
         sidebarProps: {
-          displayText: "Default"
+          displayText: "ОРГАНИЗАЦИЯ"
         },
       },
       {
-        path: "/dashboard/analytics",
-        element: <AnalyticsPage />,
-        state: "dashboard.analytics",
+        path: "/db_1-5/page_1_2",
+        element: <Page_1_2 />,
+        state: "db_1-5.page_1_2",
         sidebarProps: {
-          displayText: "Analytic"
+          displayText: "ИНФ И ОБ ИНФОРМАТИЗАЦИИ"
         }
       },
       {
-        path: "/dashboard/saas",
-        element: <SaasPage />,
-        state: "dashboard.saas",
+        path: "/db_1-5/page_1_3",
+        element: <Page_1_3 />,
+        state: "db-1-5.page_1_3",
         sidebarProps: {
-          displayText: "Saas"
+          displayText: "ПОДР(СОТРУДНИК) ИБ (ИКТ) ОРГАНИЗАЦИИ"
+        }
+      },
+      {
+        path: "/db_1-5/page_1_4",
+        element: <Page_1_4 />,
+        state: "db-1-5.page_1_4",
+        sidebarProps: {
+          displayText: "ПОДР ГУП ЦЕНТР КИБЕРБЕЗОПАСНОСТИ"
+        }
+      },
+      {
+        path: "/db_1-5/page_1_5",
+        element: <Page_1_5 />,
+        state: "db-1-5.page_1_5",
+        sidebarProps: {
+          displayText: "АИСМ ИБ ГУП ЦЕНТР КИБЕРБЕЗОПАСНОСТИ"
         }
       }
     ]
   },
   {
-    path: "/component",
+    path: "/db_6-7",
     element: <ComponentPageLayout />,
-    state: "component",
+    state: "data base 6 - 7",
     sidebarProps: {
-      displayText: "Components",
-      icon: <AppsOutlinedIcon />
+      displayText: "DB 6-7",
+      icon: <DashboardOutlinedIcon />
     },
     child: [
       {
-        path: "/component/alert",
-        element: <AlertPage />,
-        state: "component.alert",
+        path: "/db_6-7/page_2_1",
+        element: <Page_2_1 />,
+        state: "db_6-7.alert",
         sidebarProps: {
-          displayText: "Alert"
+          displayText: "ХАКЕРСКИЕ  ГРУППИРОВКИ"
         },
       },
       {
-        path: "/component/button",
-        element: <ButtonPage />,
-        state: "component.button",
+        path: "/db_6-7/page_2_2",
+        element: <Page_2_2 />,
+        state: "db_6-7.page_2_1",
         sidebarProps: {
-          displayText: "Button"
+          displayText: "НАРУШИТЕЛЬ"
         }
       }
     ]
   },
   {
-    path: "/documentation",
-    element: <DocumentationPage />,
-    state: "documentation",
+    path: "/db_8-10",
+    element: <Outlet3 />,
+    state: "data base 8 - 10",
     sidebarProps: {
-      displayText: "Documentation",
-      icon: <ArticleOutlinedIcon />
-    }
+      displayText: "DB 8-10",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_8-10/page_3_1",
+        element: <Page_3_1 />,
+        state: "db_8-10.alert",
+        sidebarProps: {
+          displayText: "Л И Ц О"
+        },
+      },
+      {
+        path: "/db_8-10/page_3_2",
+        element: <Page_3_2 />,
+        state: "db_8-10.alert",
+        sidebarProps: {
+          displayText: "К О Н Т А К Т - СВЯЗЬ ЛИЦА"
+        },
+      },
+      {
+        path: "/db_8-10/page_3_3",
+        element: <Page_3_3 />,
+        state: "db_8-10.alert",
+        sidebarProps: {
+          displayText: "А Д Р Е С"
+        },
+      }
+    ]
+  },
+
+
+
+  {
+    path: "/db_11",
+    element: <Page_4_1 />,
+    state: "Page 11 19 22 28",
+    sidebarProps: {
+      displayText: "DB 11-19-22-28",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_11/page_4_1",
+        element: <Page_4_1 />,
+        state: "db_11.alert",
+        sidebarProps: {
+          displayText: "Л И Ц О"
+        }
+      },
+      {
+        path: "/db_11/page_4_2",
+        element: <Page_4_2 />,
+        state: "db_11.alert",
+        sidebarProps: {
+          displayText: "К О Н Т А К Т - СВЯЗЬ ЛИЦА"
+        }
+      },
+      {
+        path: "/db_11/page_4_3",
+        element: <Page_4_3/>,
+        state: "db_11.alert",
+        sidebarProps: {
+          displayText: "А Д Р Е С"
+        },
+      },
+      {
+        path: "/db_11/page_4_4",
+        element: <Page_4_4 />,
+        state: "db_11.alert",
+        sidebarProps: {
+          displayText: "А Д Р Е С "
+        }
+      },
+    ]
+
   },
   {
     path: "/changelog",
