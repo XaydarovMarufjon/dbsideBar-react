@@ -28,6 +28,7 @@ import Outlet5 from "../pages/db_12-13/Outlet5";
 import Outlet6 from "../pages/db_14-21/Outlet6";
 import Page_14 from "../pages/db_14-21/Page_14";
 import Page_21 from "../pages/db_14-21/Page_21";
+import Outlet7 from "../pages/db_15-16/Outlet7";
 
 const appRoutes: RouteType[] = [
   {
@@ -257,6 +258,33 @@ const appRoutes: RouteType[] = [
       }
     ]
 
+  },
+  {
+    path: "/db_15-16",
+    element: <Outlet7/>,
+    state: "Page 15 - 16",
+    sidebarProps: {
+      displayText: "DB 15-16",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_15-16/page_15",
+        element: <Page_14 />,
+        state: "db_15-16.alert",
+        sidebarProps: {
+          displayText: "СЕРТИФИКАЦИЯ ИКТ (ПО)"
+        }
+      },
+      {
+        path: "/db_15-16/page_16",
+        element: <Page_21/>,
+        state: "db_15-16.alert",
+        sidebarProps: {
+          displayText: "СЕРТИФИКАЦИЯ СИСТ УПР ИНФО БЕЗОПАСНОСТИ"
+        }
+      }
+    ]
   },
   {
     path: "/changelog",
