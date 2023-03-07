@@ -25,6 +25,9 @@ import Page_4_3 from "../pages/db_11/Page_4_3";
 import Page_4_4 from "../pages/db_11/PAge_4_4";
 import Outlet4 from "../pages/db_11/Outlet4";
 import Outlet5 from "../pages/db_12-13/Outlet5";
+import Outlet6 from "../pages/db_14-21/Outlet6";
+import Page_14 from "../pages/db_14-21/Page_14";
+import Page_21 from "../pages/db_14-21/Page_21";
 
 const appRoutes: RouteType[] = [
   {
@@ -222,6 +225,34 @@ const appRoutes: RouteType[] = [
         state: "db_12-13.alert",
         sidebarProps: {
           displayText: "ЭКСПЕРТИЗА ГОС.ИНФОРМАЦИОННЫХ СИСТЕМ"
+        }
+      }
+    ]
+
+  },
+  {
+    path: "/db_14-21",
+    element: <Outlet6/>,
+    state: "Page 14 - 21 ",
+    sidebarProps: {
+      displayText: "DB 14-21",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_14-21/page_14",
+        element: <Page_14 />,
+        state: "db_14-21.alert",
+        sidebarProps: {
+          displayText: "КСПЕРТИЗА ИНФ СИСТ НА СООТЕ ТРЕ ИНФ БЕЗ"
+        }
+      },
+      {
+        path: "/db_14-21/page_21",
+        element: <Page_21/>,
+        state: "db_14-21.alert",
+        sidebarProps: {
+          displayText: "ТЕСТИРОВАНИЕ НА ПРОНИКНОВЕНИЕ (PENTEST)"
         }
       }
     ]
