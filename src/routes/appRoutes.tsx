@@ -23,6 +23,7 @@ import Page_3_3 from "../pages/db_8-10/Page_3_3";
 import Page_4_2 from "../pages/db_11/Page_4_2";
 import Page_4_3 from "../pages/db_11/Page_4_3";
 import Page_4_4 from "../pages/db_11/PAge_4_4";
+import Outlet4 from "../pages/db_11/Outlet4";
 
 const appRoutes: RouteType[] = [
   {
@@ -153,12 +154,9 @@ const appRoutes: RouteType[] = [
       }
     ]
   },
-
-
-
   {
     path: "/db_11",
-    element: <Page_4_1 />,
+    element: <Outlet4/>,
     state: "Page 11 19 22 28",
     sidebarProps: {
       displayText: "DB 11-19-22-28",
@@ -178,7 +176,7 @@ const appRoutes: RouteType[] = [
         element: <Page_4_2 />,
         state: "db_11.alert",
         sidebarProps: {
-          displayText: "К О Н Т А К Т - СВЯЗЬ ЛИЦА"
+          displayText: "РАССЛЕДОВАНИЕ"
         }
       },
       {
