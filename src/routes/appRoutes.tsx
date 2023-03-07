@@ -24,6 +24,7 @@ import Page_4_2 from "../pages/db_11/Page_4_2";
 import Page_4_3 from "../pages/db_11/Page_4_3";
 import Page_4_4 from "../pages/db_11/PAge_4_4";
 import Outlet4 from "../pages/db_11/Outlet4";
+import Outlet5 from "../pages/db_12-13/Outlet5";
 
 const appRoutes: RouteType[] = [
   {
@@ -141,7 +142,7 @@ const appRoutes: RouteType[] = [
         element: <Page_3_2 />,
         state: "db_8-10.alert",
         sidebarProps: {
-          displayText: "К О Н Т А К Т - СВЯЗЬ ЛИЦА"
+          displayText: "КОНТАКТ - СВЯЗЬ ЛИЦА"
         },
       },
       {
@@ -184,7 +185,7 @@ const appRoutes: RouteType[] = [
         element: <Page_4_3/>,
         state: "db_11.alert",
         sidebarProps: {
-          displayText: "А Д Р Е С"
+          displayText: "ВОСС И УНИЧ Ц-Д С ЭЛЕК НОСИТЕЛЕЙ ИНФО"
         },
       },
       {
@@ -192,9 +193,37 @@ const appRoutes: RouteType[] = [
         element: <Page_4_4 />,
         state: "db_11.alert",
         sidebarProps: {
-          displayText: "А Д Р Е С "
+          displayText: "РЕАГИРОВАНИЕ - ПРИНЯТЫЕ МЕРЫ"
         }
       },
+    ]
+
+  },
+  {
+    path: "/db_12-13",
+    element: <Outlet5/>,
+    state: "Page 12 - 13 ",
+    sidebarProps: {
+      displayText: "DB 12-13",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_12-13/page_12",
+        element: <Page_4_1 />,
+        state: "db_12-13.alert",
+        sidebarProps: {
+          displayText: "ЭКСПЕРТИЗА ТЕХНИЧЕСКИХ ЗАДАНИЙ"
+        }
+      },
+      {
+        path: "/db_12-13/page_13",
+        element: <Page_4_2 />,
+        state: "db_12-13.alert",
+        sidebarProps: {
+          displayText: "ЭКСПЕРТИЗА ГОС.ИНФОРМАЦИОННЫХ СИСТЕМ"
+        }
+      }
     ]
 
   },
