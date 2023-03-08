@@ -7,18 +7,21 @@ const Page_16 = () => {
     <div className='px-5'>
       <h4 className='text-center bg-info py-2 mb-5'>СЕРТИФИКАЦИЯ СИСТЕМЫ УПРАВЛЕНИЯ ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ</h4>
       <form className="row">
+
         <div className="mb-3 col-6 col-lg-4">
           <label className="form-label">Организация предоставленная услуга "СЕРТИФИКАЦИЯ СМИБ"</label>
           <select name="" id="" className="form-select">
             <option>Прямая и обратная ссылка на БД "Организация"</option>
           </select>
         </div>
+
         <div className="mb-3 col-6 col-lg-4">
           <label className="form-label">Основание для осуществления Сертификации СМИБ</label>
           <select name="" id="" className="form-select">
             <option selected>Прямая ссылка на СБ "Основание для оказания услуги ГУП "ЦКБ"</option>
           </select>
         </div>
+         
         <div className="mb-3 col-6 col-lg-4">
           <label className="form-label">Номер подписанного договора, запроса и т.д.  на проведение Сертификации СМИБ</label>
           <input type="text" id="" className="form-control" />
