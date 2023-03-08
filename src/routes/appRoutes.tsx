@@ -287,6 +287,40 @@ const appRoutes: RouteType[] = [
     ]
   },
   {
+    path: "/db_17-30",
+    element: <Outlet7/>,
+    state: "Page 17- 29 - 30",
+    sidebarProps: {
+      displayText: "DB 17-30",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_17-30/page_17",
+        element: <Page_14 />,
+        state: "db_17-30.alert",
+        sidebarProps: {
+          displayText: "СЕРТИФИКАЦИЯ ИКТ (ПО)"
+        }
+      },
+      {
+        path: "/db_17-30/page_16",
+        element: <Page_21/>,
+        state: "db_17-30.alert",
+        sidebarProps: {
+          displayText: "СЕРТИФИКАЦИЯ СИСТ УПР ИНФО БЕЗОПАСНОСТИ"
+        }
+      }
+    ]
+  },
+
+
+
+
+
+
+
+  {
     path: "/changelog",
     element: <ChangelogPage />,
     state: "changelog",
