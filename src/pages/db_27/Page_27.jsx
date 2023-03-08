@@ -5,36 +5,48 @@ const Page_27 = () => {
   return (
     <>
       <div className='px-5'>
-        <h4 className='text-center bg-info py-2 mb-5'>СЕРТИФИКАЦИЯ ИКТ (ПО)</h4>
+        <h4 className='text-center bg-info py-2 mb-5'>И С Т О Ч Н И К   И Н Ф О Р М А Ц И И</h4>
         <form className="row">
+
           <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Организация предоставленная услуга "СЕРТИФИКАЦИЯ ПО"</label>
+            <label className="form-label">Категория (виды) источника "ИИ" </label>
             <select name="" id="" className="form-select">
-              <option>Прямая и обратная ссылка на БД "Организация"</option>
+              <option>Официальные сообщения СМИ</option>
+              <option>Официальное уведомление министерств и ведомств Республики Узбекистан о компьютерном инциденте</option>
+              <option>Официальное уведомление министерств и ведомств Республики Узбекистан о компьютерной атаке</option>
+              <option>Официальное уведомление министерств и ведомств Республики Узбекистан об уязвимости</option>
             </select>
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Основание для осуществления Сертификации</label>
+            <label className="form-label"><b>ИСТОЧНИК ИНФОРМАЦИИ</b></label>
             <select name="" id="" className="form-select">
-              <option selected>Прямая ссылка на СБ "Основание для оказания услуги ГУП "ЦКБ"</option>
+              <option selected>Прямые и обратные ссылки на ВСЕ БАЗЫ ДАННЫХ (кроме "ИИ")</option>
             </select>
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Номер подписанного договора, запроса и т.д.  на проведение Сертификации</label>
-            <input type="text" id="" className="form-control" />
-          </div>
-          <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Дата подписанного договора на проведение Сертификации (поступивщего запроса)</label>
+            <label className="form-label">Дата получения (регистрации) "ИИ"</label>
             <input type="date" name="" id="" className='form-control' />
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Сумма оплаты за услугу по договору</label>
+            <label className="form-label">Время получения (регистрации) "ИИ"</label>
+            <input type="time" id="" className="form-control" />
+          </div>
+
+          <div className="mb-3 col-6 col-lg-4">
+            <label className="form-label">Класс (степень) конфиденциальности (закрытости) "ИИ"</label>
             <select name="" id="" className="form-select">
-              <option selected>Прямая  ссылки на СБ "Сумма"</option>
+              <option selected>Государственная тайна</option>
+              <option >Коммерческая тайна </option>
+              <option >Банковская тайна</option>
+              <option >Профессиональная тайна</option>
             </select>
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Предмет Сертификации (точное наименование ПО)</label>
+            <label className="form-label">Степень важности "ИИ"</label>
             <select name="" id="" className="form-select">
               <option selected>Прямая ссылка на СБ "Предметы Сертификации ПО"</option>
             </select>
