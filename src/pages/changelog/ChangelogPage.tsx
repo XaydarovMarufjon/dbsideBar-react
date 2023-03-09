@@ -4,7 +4,7 @@ type Props = {};
 
 const ChangelogPage = (props: Props) => {
   return (
-    <div>ChangelogPage</div>
+    <div>Documentation here...</div>
   );
 };
 

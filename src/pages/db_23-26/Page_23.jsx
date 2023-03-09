@@ -62,6 +62,7 @@ const Page_23 = () => {
             <label className="form-label">Дата выявления (возникновения) "ИН"</label>
             <input type="date" id="" className="form-select" />
           </div> 
+          
            <div className='my_hr'> </div>
 
           <div className="mb-3 col-6 col-lg-4">

@@ -73,7 +73,8 @@ const Page_24 = () => {
 
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Описание идентифицированного "СО"</label>
-            <select name="" id=""><option selected>вход в систему (успешный или нет)</option>
+            <select name="" id="" className='form-select'>
+              <option selected>вход в систему (успешный или нет)</option>
               <option selected>выход из системы</option>
               <option selected>обращение к удаленной системе</option>
               <option selected>операции с файлами (открыть, закрыть, переименовать, удалить</option></select>
@@ -117,7 +118,7 @@ const Page_24 = () => {
           
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Текущий статус (состояние) "СО"</label>
-             <input type="datetime-local" />
+             <input type="datetime-local" className='form-control' />
           </div>
 
           <div className="mb-3 col-6 col-lg-4">

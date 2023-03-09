@@ -435,7 +435,7 @@ const appRoutes: RouteType[] = [
     element: <ChangelogPage />,
     state: "changelog",
     sidebarProps: {
-      displayText: "Changelog",
+      displayText: "Documentation",
       icon: <FormatListBulletedOutlinedIcon />
     }
   }
