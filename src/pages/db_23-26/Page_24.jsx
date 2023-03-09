@@ -5,60 +5,44 @@ const Page_24 = () => {
   return (
     <>
       <div className='px-5'>
-        <h4 className='text-center bg-info py-2 mb-5'>С О Б Ы Т И Е  ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ</h4>
+        <h4 className='text-center bg-mavzu py-2 mb-5'>С О Б Ы Т И Е  ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ</h4>
         <form className="row">
+         
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">"СО" зафиксировано в ОРГАНИЗАЦИИ (данные о "СО" поступили из "ОР" / "ЛЦ")</label>
             <select name="" id="" className="form-select">
               <option>Прямая и обратная ссылка на БД "ОРГАНИЗАЦИЯ", БД "ЛИЦО"</option>
             </select>
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Подразделение "ЦК / "ПБ" / "ЛЦ", выявившее "ИН"</label>
             <select name="" id="" className="form-select">
               <option selected>Прямые и обратные ссылки на БД "ЦК"", БД "ПБ", БД "ЛЦ"</option>
             </select>
           </div>
-
-          <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Место происшествия (фиксации) "ИН"</label>
-            <input type="text" id="" className="form-control" />
-          </div>
-          <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Сумма оплаты за услугу по договору</label>
-            <select name="" id="" className="form-select">
-              <option selected>Прямая и обратная ссылка на БД "АДРЕС"</option>
-            </select>
-          </div>
-
-
+ 
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Дата фиксации (регистрации) "СО"</label>
-            <select name="" id="" className="form-select">
-              <option selected>Прямая  ссылки на СБ "Сумма"</option>
-            </select>
-          </div> 
-          <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Дата начала предоставления услуги "Сертификации ПО"</label>
             <input type="date" id="" className="form-select" />
-          </div>
+          </div> 
 
       
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Время фиксации (регистрации) "СО"</label>
-            <select name="" id="" className="form-select">
-              <option selected>Цифровая (формат времени) чч:мм:сс</option>
-            </select>
+            <input type="time" id="" className="form-select" />
           </div>
+
+
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">"СО" относится к ГРУППЕ событий ИБ</label>
             <select name="" id="" className="form-select">
               <option selected>Информативные</option>
               <option selected>Не критичные </option>
               <option selected>Критичные </option>
-              
            </select>
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Классификация уровеня риска (критичности) "СО"</label>
             <select name="" id="" className="form-select">
@@ -71,7 +55,7 @@ const Page_24 = () => {
             </select>
           </div>
 
-<div className="mb-3 col-6 col-lg-4">
+        <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Вероятная, прогнозируемая реализация "СО" (по базовому Типу "СО")</label>
             <select name="" id="" className="form-select">
               <option selected>Полное нарушение конфиденциальности</option>
@@ -112,13 +96,13 @@ const Page_24 = () => {
           </div>
 
           <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Адрес хранения записей о выявленных "СО" и записей SYSLOG, послуживших основанием для регистрации"СО")</label>
+            <label className="form-label">Адрес хранения записей о выявленных "СО" и записей SYSLOG, послуживших основанием для регистрации"СО"</label>
             <input type="text" id="" className="form-control" />
           </div>
           
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Применение СЗИ для защиты информации о "СО"</label>
-            <input type="text" id="" className="form-control" />
+            <input type="text" id="" className="form-control" placeholder='конвертировать в словарь'/>
           </div>
           
           <div className="mb-3 col-6 col-lg-4">
@@ -133,31 +117,56 @@ const Page_24 = () => {
           
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Текущий статус (состояние) "СО"</label>
-            <select name="" id="" className="form-select ">
-              <option>Время  (Дни/Часы/Минуты) (событие)</option>
-              <select>
-             </div>
+             <input type="datetime-local" />
+          </div>
 
-<div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Наличие причинно-следственной связи с другими "СО", "ИН", "УЯ", "УГ": ("УГ"->"СО"->"ИН"->Реализованная угроза)</label>
+          <div className="mb-3 col-6 col-lg-4">
+            <label className="form-label">Наличие причинно-следственной связи с другими "СО", "ИН", "УЯ", "УГ": ("УГ"-"СО"-"ИН"- Реализованная угроза)</label>
             <select name="" id="" className="form-select ">
               <option>Прямые и обратные ссылки на БД "ИН", БД "СО", БД "УЯ", БД "УГ"</option>
             </select>
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Подразделение "ЦК / "ПБ" / "ЛЦ", обрабатывающее "СО"</label>
             <select name="" id="" className="form-select ">
               <option>Прямые и обратные ссылки на БД "ЦК"", БД "ПБ", БД "ЛЦ"</option>
             </select>
           </div> 
+
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Результаты ПРИНЯТЫХ МЕР по "СО"</label>
             <select name="" id="" className="form-select ">
               <option>Прямая и обратная ссылка на БД "РЕАГИРОВАНИЕ - ПРИНЯТЫЕ МЕРЫ"</option>
             </select>
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">Дополнительная информация  </label>
+            <label className="form-label">Дополнительная информация   </label>
+            <input type="text" id="" className="form-control" />
+          </div>
+
+          <div className="mb-3 col-6 col-lg-4">
+            <label className="form-label">Итоговый документ по результатам реализации услуги "Разработка политики ИБ" (ДОК файл на внешней папке)</label>
+            <select name="" id="" className="form-select">
+              <option selected>Прямая ссылка на ДОК файл с данными по конкретной организации на внешнем источнике (папке)</option>
+            </select>
+          </div>
+
+          <div className="mb-3 col-6 col-lg-4">
+            <label className="form-label">Источник информации об "СО"</label>
+            <select name="" id="" className="form-select">
+              <option selected>Прямая и обратная ссылка на БД "ИСТОЧНИК ИНФОРМАЦИИ"</option>
+            </select>
+          </div>    
+
+          <div className="mb-3 col-6 col-lg-4">
+            <label className="form-label">Дата ввода первичной информации</label>
+            <input type="date" name="" id="" className='form-control' />
+          </div> 
+
+          <div className="mb-3 col-6 col-lg-4">
+            <label className="form-label">Информацию вводил(а) (ФИО ответственного сотрудника ГУП "ЦКБ)  </label>
             <select name="" id="" className="form-select">
               <option>ABDUG‘ANIYEV AZIZBEK ULUG‘BEK O‘G‘LI</option>
               <option>ABDULAZIZOV A’ZAM ABDUSAIDOVICH</option>
@@ -166,10 +175,12 @@ const Page_24 = () => {
               <option>ABDUMANONOV BAXROM AKMAL O‘G‘LI</option>
             </select>
           </div>
+
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Дата коррекции информации</label>
-            <input type="date" id="" className="form-select" />
-          </div>
+            <input type="date" name="" id="" className='form-control' />
+          </div> 
+
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Информацию корректировал (а) (ФИО ответственного сотрудника ГУП "ЦКБ) </label>
             <select name="" id="" className="form-select">
@@ -180,6 +191,8 @@ const Page_24 = () => {
               <option>ABDUMANONOV BAXROM AKMAL O‘G‘LI</option>
             </select>
           </div>
+
+          
         </form>
       </div>
     </>

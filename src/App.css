@@ -1,0 +1,23 @@
+.other{
+    background-color: antiquewhite;
+    padding: 20px 0;
+    border: 1px 0 solid gray;
+}
+
+.bg-mavzu{
+    background-color: rgb(131, 142, 189) !important;
+    border-radius: 5px !important;
+}
+.my_hr{
+    padding: 2px;
+    margin: 20px 0 30px 0;
+    background: rgb(0, 0, 0) !important;
+    border: none;
+    border-radius: 5px !important;
+
+}
+
+
+
+
+

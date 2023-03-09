@@ -13,6 +13,7 @@ const Topbar = () => {
         boxShadow: "unset",
         backgroundColor: colorConfigs.topbar.bg,
         color: colorConfigs.topbar.color,
+        textAlign : colorConfigs.topbar.align
       }}
     >
       <Toolbar>

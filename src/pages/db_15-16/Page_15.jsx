@@ -5,7 +5,7 @@ const Page_15 = () => {
   return (
     <>
       <div className='px-5'>
-        <h4 className='text-center bg-info py-2 mb-5'>СЕРТИФИКАЦИЯ ИКТ (ПО)</h4>
+        <h4 className='text-center bg-mavzu py-2 mb-5'>СЕРТИФИКАЦИЯ ИКТ (ПО)</h4>
         <form className="row">
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Организация предоставленная услуга "СЕРТИФИКАЦИЯ ПО"</label>
@@ -113,7 +113,7 @@ const Page_15 = () => {
   );
 };
 
-export default Page_1_5;
+export default Page_15;
 
 
 

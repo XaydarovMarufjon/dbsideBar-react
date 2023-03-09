@@ -29,6 +29,21 @@ import Outlet6 from "../pages/db_14-21/Outlet6";
 import Page_14 from "../pages/db_14-21/Page_14";
 import Page_21 from "../pages/db_14-21/Page_21";
 import Outlet7 from "../pages/db_15-16/Outlet7";
+import Outlet8 from "../pages/db_17-30/Outlet8";
+import Outlet9 from "../pages/db_18-20/Outlet9";
+import Page_17 from "../pages/db_17-30/Page_17";
+import Page_29 from "../pages/db_17-30/Page_29";
+import Page_30 from "../pages/db_17-30/Page_30";
+import Page_18 from "../pages/db_18-20/Page_18";
+import Page_20 from "../pages/db_18-20/Page_20";
+import Page_23 from "../pages/db_23-26/Page_23";
+import Page_24 from "../pages/db_23-26/Page_24";
+import Page_25 from "../pages/db_23-26/Page_25";
+import Page_26 from "../pages/db_23-26/Page_26";
+import Page_27 from "../pages/db_27/Page_27";
+import Outlet11 from "../pages/db_27/Outlet11";
+import Outlet10 from "../pages/db_23-26/Outlet10";
+import Page_15 from "../pages/db_15-16/Page_15";
 
 const appRoutes: RouteType[] = [
   {
@@ -46,7 +61,7 @@ const appRoutes: RouteType[] = [
     element: <DashboardPageLayout />,
     state: "data  base 1 -5 ",
     sidebarProps: {
-      displayText: "DB 1-5",
+      displayText: "DB 1-2-3-4-5",
       icon: <DashboardOutlinedIcon />
     },
     child: [
@@ -127,9 +142,9 @@ const appRoutes: RouteType[] = [
   {
     path: "/db_8-10",
     element: <Outlet3 />,
-    state: "data base 8 - 10",
+    state: "data base 8 - 9 - 10",
     sidebarProps: {
-      displayText: "DB 8-10",
+      displayText: "DB 8-9-10",
       icon: <DashboardOutlinedIcon />
     },
     child: [
@@ -270,7 +285,7 @@ const appRoutes: RouteType[] = [
     child: [
       {
         path: "/db_15-16/page_15",
-        element: <Page_14 />,
+        element: <Page_15 />,
         state: "db_15-16.alert",
         sidebarProps: {
           displayText: "СЕРТИФИКАЦИЯ ИКТ (ПО)"
@@ -288,33 +303,128 @@ const appRoutes: RouteType[] = [
   },
   {
     path: "/db_17-30",
-    element: <Outlet7/>,
+    element: <Outlet8/>,
     state: "Page 17- 29 - 30",
     sidebarProps: {
-      displayText: "DB 17-30",
+      displayText: "DB 17-29-30",
       icon: <DashboardOutlinedIcon />
     },
     child: [
       {
         path: "/db_17-30/page_17",
-        element: <Page_14 />,
+        element: <Page_17 />,
         state: "db_17-30.alert",
         sidebarProps: {
-          displayText: "СЕРТИФИКАЦИЯ ИКТ (ПО)"
+          displayText: "РАЗРАБОТКА ПОЛИТИКИ ИНФО БЕЗ"
         }
       },
       {
-        path: "/db_17-30/page_16",
-        element: <Page_21/>,
+        path: "/db_17-30/page_29",
+        element: <Page_29/>,
         state: "db_17-30.alert",
         sidebarProps: {
-          displayText: "СЕРТИФИКАЦИЯ СИСТ УПР ИНФО БЕЗОПАСНОСТИ"
+          displayText: "МЕЖВЕДОМСТВЕННОЕ ВЗАИМОДЕЙСТВИЕ"
+        }
+      },
+      {
+        path: "/db_17-30/page_30",
+        element: <Page_30/>,
+        state: "db_17-30.alert",
+        sidebarProps: {
+          displayText: "НОРМАТИВНО-ПРАВОВОЕ ОБЕС И СОВЕР Н Б"
         }
       }
     ]
   },
-
-
+  {
+    path: "/db_18-20",
+    element: <Outlet9/>,
+    state: "Page 18 - 20",
+    sidebarProps: {
+      displayText: "DB 18-20",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_18-20/page_18",
+        element: <Page_18 />,
+        state: "db_18-20.alert",
+        sidebarProps: {
+          displayText: "АУДИТ ИНФОРМАЦИОННОЙ БЕЗ ОБЪЕКТОВ ИНФО"
+        }
+      },
+      {
+        path: "/db_18-20/page_20",
+        element: <Page_20/>,
+        state: "db_18-20.alert",
+        sidebarProps: {
+          displayText: "ПРОВЕРКИ И ИЗУЧЕНИЯ"
+        }
+      }
+    ]
+  },
+  {
+    path: "/db_23-26",
+    element: <Outlet10/>,
+    state: "Page 23 - 24 - 25 - 26",
+    sidebarProps: {
+      displayText: "DB 23-24-25-26",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_23-26/page_23",
+        element: <Page_23 />,
+        state: "db_23-26.alert",
+        sidebarProps: {
+          displayText: "КИБЕРИНЦИДЕНТ"
+        }
+      },
+      {
+        path: "/db_23-26/page_24",
+        element: <Page_24/>,
+        state: "db_23-26.alert",
+        sidebarProps: {
+          displayText: "СОБЫТИЕ  ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ"
+        }
+      },
+      {
+        path: "/db_23-26/page_25",
+        element: <Page_25 />,
+        state: "db_23-26.alert",
+        sidebarProps: {
+          displayText: "УЯЗВИМОСТЬ  ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ"
+        }
+      },
+      {
+        path: "/db_23-26/page_26",
+        element: <Page_26/>,
+        state: "db_23-26.alert",
+        sidebarProps: {
+          displayText: "УГРОЗА  ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ"
+        }
+      }
+    ]
+  },
+  {
+    path: "/db_27",
+    element: <Outlet11/>,
+    state: "Page 27",
+    sidebarProps: {
+      displayText: "DB 27",
+      icon: <DashboardOutlinedIcon />
+    },
+    child: [
+      {
+        path: "/db_27/page_27",
+        element: <Page_27 />,
+        state: "db_27.alert",
+        sidebarProps: {
+          displayText: "ИСТОЧНИК   ИНФОРМАЦИИ"
+        }
+      }
+    ]
+  },
 
 
 

@@ -4,7 +4,7 @@ const Page_4_4 = () => {
   return (
     <>
     <div className='px-5'>
-    <h4 className='text-center bg-info py-2'>Р Е А Г И Р О В А Н И Е - ПРИНЯТЫЕ МЕРЫ</h4>
+    <h4 className='text-center bg-mavzu py-2'>Р Е А Г И Р О В А Н И Е - ПРИНЯТЫЕ МЕРЫ</h4>
     <form className="row">
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Источник информации о "ХГ"</label>

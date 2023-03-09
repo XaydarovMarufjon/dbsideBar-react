@@ -9,7 +9,8 @@ const colorConfigs = {
   },
   topbar: {
     bg: "#fff",
-    color: "#000"
+    color: "#000",
+    align : "center"
   },
   mainBg: colors.grey["100"]
 };

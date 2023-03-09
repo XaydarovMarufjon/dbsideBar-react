@@ -4,7 +4,7 @@ const Page_3_3 = () => {
   return (
     <>
     <div className='px-5'>
-    <h4 className='text-center bg-info py-2 mb-5'>А Д Р Е С</h4>
+    <h4 className='text-center bg-mavzu py-2 mb-5'>А Д Р Е С</h4>
     <form className="row">
           <div className="mb-3 col-md-6 col-lg-4">
             <label className="form-label">Макро регионы мира (континент)</label>

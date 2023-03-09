@@ -5,7 +5,7 @@ const Page_25 = () => {
   return (
     <>
       <div className='px-5'>
-        <h4 className='text-center bg-info py-2 mb-5'>У Я З В И М О С Т Ь  ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ</h4>
+        <h4 className='text-center bg-mavzu py-2 mb-5'>У Я З В И М О С Т Ь  ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ</h4>
         <form className="row">
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">"УЯ" выявлена в ОРГАНИЗАЦИИ (данные о "УЯ" поступили из "ОР" / "ЛЦ")</label>
@@ -24,7 +24,7 @@ const Page_25 = () => {
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Место выявления "УЯ"</label>
             <select name="" id="" className="form-select">
-              <option selected>ППрямая и обратная ссылка на БД "АДРЕС"</option>
+              <option selected>Прямая и обратная ссылка на БД "АДРЕС"</option>
             </select>
           </div>
 
@@ -65,7 +65,7 @@ const Page_25 = () => {
           </div>
 
           <div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">ID выявленной "УЯ": Эксплойты (указать код уязвимости (CVE) по https://cve.mitre.org </label>
+            <label className="form-label">ID выявленной "УЯ": Эксплойты (указать код уязвимости (CVE) по https://cve.mitre.org )</label>
             <select name="" id="" className="form-select">
               <option>CVE-2011-4859</option>
               <option>CVE-2013-5946, OSVDB ID:100840, Bugtraq ID:64172, ISS X-Force ID:89542, Exploit Database ID:30061</option>
@@ -84,9 +84,8 @@ const Page_25 = () => {
             </select>
           </div>
 
-Ахиллес, [3/8/2023 5:02 PM]
-<div className="mb-3 col-6 col-lg-4">
-            <label className="form-label">ID выявленной "УЯ": Известные уязвимости (указать код (KEV) по https://www.cisa.gov</label>
+       <div className="mb-3 col-6 col-lg-4">
+            <label className="form-label">ID выявленной "УЯ": Известные уязвимости (указать код (KEV) по https://www.cisa.gov)</label>
             <select name="" id="" className="form-select">
               <option>CVE-2021-27104,"Accellion","FTA","Accellion FTA OS Command Injection Vulnerability","2021-11-03","Accellion FTA 9_12_370 and earlier is affected by OS command execution via a crafted POST request to various admin endpoints.","Apply updates per vendor</option>
             </select>
@@ -156,7 +155,6 @@ const Page_25 = () => {
             </select>
           </div>
 
-Ахиллес, [3/8/2023 5:02 PM]
 <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Подтверждена ли уязвимость? (статус) ДА / НЕТ (отметить нужное)</label>
             <select name="" id="" className="form-select">

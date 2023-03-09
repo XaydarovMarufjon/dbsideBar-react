@@ -5,8 +5,9 @@ const Page_26 = () => {
   return (
     <>
       <div className='px-5'>
-        <h4 className='text-center bg-info py-2 mb-5'>СЕРТИФИКАЦИЯ ИКТ (ПО)</h4>
+        <h4 className='text-center bg-mavzu py-2 mb-5'>У Г Р О З А  ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ</h4>
         <form className="row">
+
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">"УГ" выявлена в ОРГАНИЗАЦИИ (данные о "УГ" поступили из "ОР" / "ЛЦ")</label>
             <select name="" id="" className="form-select">
@@ -57,7 +58,6 @@ const Page_26 = () => {
               <option selected>Прямая ссылка на СБ "Идентификация угрозы по способу её реализации"</option>
             </select>
           </div>
-
 
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Аппаратная и/или программная среда (объект) воздействия "УГ" </label>
@@ -143,11 +143,12 @@ const Page_26 = () => {
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Отметка об устранении (разрешении) "УГ" ДА / НЕТ (отметить нужное)   </label>
             <select name="" id="" className="form-select ">
-              <option>Прямая ссылка на СБ "Выбор ДА и НЕТ"</option>
+              <option>Уязвимость кода</option>
+              <option>Уязвимость архитектуры</option>
+              <option>Уязвимость многофакторная</option>
             </select>
           </div>
-
-          
+   
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Результаты ПРИНЯТЫХ МЕР по "УГ" (Описание процесса устранения "УГ") </label>
             <select name="" id="" className="form-select ">
@@ -166,9 +167,7 @@ const Page_26 = () => {
               <option>Прямая и обратная ссылка на БД "ИСТОЧНИК ИНФОРМАЦИИ"</option>
             </select>
           </div>
-          
-
-          
+                    
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Дата ввода первичной информации</label>
             <input type="date" name="" id="" className='form-control' />
@@ -184,6 +183,7 @@ const Page_26 = () => {
               <option>ABDUMANONOV BAXROM AKMAL O‘G‘LI</option>
             </select>
           </div>
+          
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Дата коррекции информации</label>
             <input type="date" id="" className="form-select" />

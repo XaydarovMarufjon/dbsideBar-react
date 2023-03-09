@@ -6,7 +6,7 @@ const Page_2_2 = (props: Props) => {
   return (
     <>
      <div className='px-5'>
-    <h4 className='text-center  bg-info py-2 mb-5'>НАРУШИТЕЛЬ</h4>
+    <h4 className='text-center  bg-mavzu py-2 mb-5'>НАРУШИТЕЛЬ</h4>
     <form className="row">
           <div className="mb-3 col-md-6 col-lg-4">
               <label className="form-label">Тип нарушителя</label>

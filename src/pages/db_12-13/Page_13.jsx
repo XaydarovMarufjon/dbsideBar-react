@@ -5,7 +5,7 @@ const Page_13 = () => {
   return (
     <>
       <div className='px-5'>
-        <h4 className='text-center bg-info py-2 mb-5'>ЭКСПЕРТИЗА ТЕХНИЧЕСКИХ ЗАДАНИЙ</h4>
+        <h4 className='text-center bg-mavzu py-2 mb-5'>ЭКСПЕРТИЗА ТЕХНИЧЕСКИХ ЗАДАНИЙ</h4>
         <form className="row">
           <div className="mb-3 col-6 col-lg-4">
             <label className="form-label">Организация предоставленная услуга "Экспертиза ТЗ"</label>
